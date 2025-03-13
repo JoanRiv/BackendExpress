@@ -1,4 +1,4 @@
-# Backend con Node.js, Express.js y MongoDB
+# Backend desarrollado con Node.js, Express.js y MongoDB
 
 Este proyecto es un backend para gestionar usuarios y productos con Node.js, Express.js y MongoDB. 
 Permite realizar operaciones **CRUD** (Crear, Leer, Actualizar y Eliminar) y lleva un registro de operaciones realizadas.  
@@ -28,26 +28,30 @@ Antes de ejecutar el proyecto, tiene que tener instalado:
 ## Instalación y Configuración
 
 1️⃣ **Clona este repositorio**  
-   ```sh
+   ```
    git clone https://github.com/JoanRiv/BackendExpress.git
    cd BackendExpress
+   ```
 
 2️⃣ **Instala las dependencias**
-    ```sh
+    ```
     npm install
+    ```
 
-3️⃣ Configura las variables de entorno
+3️⃣ **Configura las variables de entorno**
 
     Crea un archivo .env en la raíz del proyecto con este contenido:
     ```env
     MONGO_URI=mongodb://127.0.0.1:27017/sample
+    ```
 
 4️⃣ Inicia el servidor
 
-    ```sh
+    ```
     node server.js
+    ```
 
-    Deberías ver en la terminal:
+    La terminal deberia mostrar esto:
     ✅ Conectado a MongoDB
     ✅ Servidor corriendo en http://localhost:5000
 
@@ -79,16 +83,24 @@ GET	            /operaciones	Devuelve el número total de operaciones hechas en 
 2️⃣ Probar los endpoints usando los siguientes ejemplos:
 
     Crear un usuario (POST http://localhost:5000/usuarios)
+    ```
     {
     "nombre": "Chelo",
     "edad": 19,
     "ocupacion": "Ingeniero"
     }
+    ```
 Obtener todos los usuarios (GET http://localhost:5000/usuarios)
 Actualizar un usuario (PUT http://localhost:5000/usuarios/{ID})
+    ```
     {
         "nombre": "Chelo",
         "edad": 19
     }
+    ```
 
 Eliminar un usuario (DELETE http://localhost:5000/usuarios/{ID})
+
+##  **Autor**
+
+**Este Backend fue desarrollado por Joan Riveros**
