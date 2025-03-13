@@ -34,14 +34,16 @@ Antes de ejecutar el proyecto, tiene que tener instalado:
    ```
 
 2️⃣ **Instala las dependencias**
-    ```sh
+
+    ```
     npm install
     ```
 
 3️⃣ **Configura las variables de entorno**
+
     Crea un archivo .env en la raíz del proyecto con este contenido:
 
-    ```
+    ```env
     MONGO_URI=mongodb://127.0.0.1:27017/sample
     ```
 
