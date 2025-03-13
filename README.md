@@ -35,27 +35,27 @@ Antes de ejecutar el proyecto, tiene que tener instalado:
 
 2️⃣ **Instala las dependencias**
 
-    ```
-    npm install
-    ```
+```
+npm install
+```
 
 3️⃣ **Configura las variables de entorno**
 
-    Crea un archivo .env en la raíz del proyecto con este contenido:
+Crea un archivo .env en la raíz del proyecto con este contenido:
 
-    ```env
-    MONGO_URI=mongodb://127.0.0.1:27017/sample
-    ```
+```env
+MONGO_URI=mongodb://127.0.0.1:27017/sample
+```
 
-4️⃣ Inicia el servidor
+4️⃣ **Inicia el servidor**
 
-    ```
-    node server.js
-    ```
+```
+node server.js
+```
 
-    La terminal deberia mostrar esto:
-    ✅ Conectado a MongoDB
-    ✅ Servidor corriendo en http://localhost:5000
+La terminal deberia mostrar esto:
+✅ Conectado a MongoDB
+✅ Servidor corriendo en http://localhost:5000
 
 ---
 
@@ -82,24 +82,26 @@ GET	            /operaciones	Devuelve el número total de operaciones hechas en 
 ---
 ##  Pruebas en Postman
 1️⃣ Abrir Postman y crear una nueva petición.
+
 2️⃣ Probar los endpoints usando los siguientes ejemplos:
     Crear un usuario (POST http://localhost:5000/usuarios)
 
-    ```
+```
     {
     "nombre": "Chelo",
     "edad": 19,
     "ocupacion": "Ingeniero"
     }
-    ```
-Obtener todos los usuarios (GET http://localhost:5000/usuarios)
-Actualizar un usuario (PUT http://localhost:5000/usuarios/{ID})
-    ```
-    {
-        "nombre": "Chelo",
-        "edad": 19
-    }
-    ```
+```
+    Obtener todos los usuarios (GET http://localhost:5000/usuarios)
+    Actualizar un usuario (PUT http://localhost:5000/usuarios/{ID})
+
+```
+{
+    "nombre": "Chelo",
+    "edad": 19
+}
+```
 
 Eliminar un usuario (DELETE http://localhost:5000/usuarios/{ID})
 
